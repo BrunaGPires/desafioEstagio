@@ -32,7 +32,7 @@ if(isset($_POST['name'], $_POST['birthdate'], $_POST['cpf'], $_POST['gender'])){
 
 
 include __DIR__.'/includes/header.php';
-include __DIR__.'/includes/formulario.php';
+include __DIR__.'/includes/FormUser.php';
 include __DIR__.'/includes/footer.php';
 
 

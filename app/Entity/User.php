@@ -2,7 +2,6 @@
 namespace App\Entity;
 
 use \App\Db\Database;
-use DateTime;
 use PDO;
 
 class User{
@@ -17,8 +16,6 @@ class User{
      * cadastra novo user no banco
      */
     public function cadastrar(){
-        //$this->databertura = date('Y-m-d');
-
         $obDatabase = new Database('users');
         $this->id = $obDatabase->insert([
             'name' => $this->name,
@@ -56,9 +53,5 @@ class User{
     public static function getUser($id){
         return (new Database('users'))->select('id = '.$id)->fetchObject(self::class);
     }
-
-
 }
-
-
 ?>

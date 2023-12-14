@@ -18,6 +18,9 @@ class Database{
         $this->setConnection();
     }
 
+    /**
+     * conexão com o banco de dados
+     */
     private function setConnection(){
         try{
             $this->connection = new PDO('mysql::host='.self::HOST.';dbname='.self::name,self::user,self::pass);
@@ -28,7 +31,7 @@ class Database{
     }
 
     /**
-     * executa querys no banco de dados
+     * executa querys
      */
     public function execute($query, $params = []){
         try{
@@ -41,7 +44,7 @@ class Database{
     }
 
     /**
-     * insere dados no banco
+     * insere dados
      */
     public function insert($values){
         $fields = array_keys($values);
@@ -55,7 +58,7 @@ class Database{
     }
 
     /**
-     * atualiza dados no banco
+     * atualiza dados
      */
     public function update($where,$values){
         $fields = array_keys($values);
@@ -68,7 +71,7 @@ class Database{
     }
 
     /**
-     * exclui dados do banco
+     * exclui dados
      */
     public function delete($where){
         $query = 'DELETE FROM '.$this->table.' WHERE '.$where;
@@ -79,7 +82,7 @@ class Database{
     }
 
     /**
-     * realiza consulta no banco
+     * realiza consulta
      */
     public function select($where = null, $order = null, $limit = null, $fields = '*'){
         $where = strlen($where) ? 'WHERE '.$where : '';

@@ -19,13 +19,13 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav ">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">User</a>
+                    <a class="nav-link active" aria-current="page" href="indexUser.php">User</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Protocol</a>
+                    <a class="nav-link active" aria-current="page" href="indexProtocol.php">Protocol</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Exit</a>
+                    <a class="nav-link active" aria-current="page" href="index.php">Exit</a>
                   </li>
                 </ul>
               </div>

@@ -9,14 +9,14 @@
 ?>
 
 <main>
-    <a href="index.php">
+    <a href="indexUser.php">
         <button class="btn btn-success">Voltar</button>
     </a>
 
     <h2 class="mt-3"><?=TITLE?></h2>
 
     <form method="post">
-            <legend>Dados Pessoais</legend>
+        <legend>Dados Pessoais</legend>
             <table cellspacing="10">
                 <tr>
                     <td>
